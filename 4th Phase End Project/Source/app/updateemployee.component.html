@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Update Employee</h2>
+    <form class = "update-form" *ngIf="employee" (ngSubmit)="updateemployee()">       
+        <label>First Name: </label><br>
+        <input type="text" [(ngModel)]="employee.first_name" name="first_name" placeholder=" Enter First Name "/><br><br>
+        <label>Last name: </label><br>
+        <input type="text" [(ngModel)]="employee.last_name" name="last_name" placeholder=" Enter Last name "/><br><br>
+        <label>Email: </label><br>
+        <input type="text" [(ngModel)]="employee.email" name="email"  placeholder=" Enter Email "/><br><br>
+        <button type="submit"> Update Employee </button>
+    </form>
+</div>
+

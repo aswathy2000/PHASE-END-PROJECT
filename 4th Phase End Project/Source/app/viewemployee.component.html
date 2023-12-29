@@ -1,0 +1,40 @@
+<div >
+    <table *ngIf="employee" >
+        <tr colspan="2">
+            <th class="row-header"><span>Details of </span> <i>{{employee.first_name}} {{employee.last_name}}</i> </th>
+    
+        </tr>
+        <tr>
+            <td><b>Employee Id</b></td>
+            <td>{{employee.id}}</td>
+        </tr>
+        <tr>
+            <td><b>Employee First Name</b></td>
+            <td>{{employee.first_name}}</td>
+        </tr>
+        <tr>
+            <td><b>Employee Last Name</b></td>
+            <td>{{employee.last_name}}</td>
+        </tr>
+        <tr>
+            <td><b>Employee Email</b></td>
+            <td>{{employee.email}}</td>
+        </tr>
+        <tr colspan="2">
+            <td class="button-list">
+                <a routerLink="/eventemployees"><button class="button-1">
+                    Employee List
+                </button></a>
+    
+                <button (click)="deleteEmployee()" class="button-2">
+                    Delete
+                </button>
+                <a [routerLink]="['/updateemployee/'+employee.id]"><button class="button-3">
+                    Update
+                </button></a>
+            </td>
+            
+        </tr>
+    </table>
+    </div>
+    

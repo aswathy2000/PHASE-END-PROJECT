@@ -1,0 +1,28 @@
+<div class="nav-bar">
+
+    <a class="portal nav-link " routerLink="/navbar" routerLinkActive="active-link">Portal</a>
+    
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/eventemployees">Employees</a>
+        </li>
+      </ul>
+      <form role="search" class="search">
+        
+        <input type="search" placeholder="Search" aria-label="Search">
+      
+      </form>
+    </div>
+
+<h1>Event Management <span> Project</span> </h1>
+
+<h3><span> Login </span> to know more</h3>
+
+<button type="submit" (click)="directlogin()" > Login </button><br><br>
+
+<router-outlet></router-outlet>
+
+
